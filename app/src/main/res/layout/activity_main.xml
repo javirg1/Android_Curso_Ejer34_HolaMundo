@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_acceso"
+    android:background="@drawable/bg_prime"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_title"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,13 +28,14 @@
         android:gravity="center"
         android:hint="Tu email"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textColor="@color/black"
+        android:textColorHint="#29A6A5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintVertical_bias="0.156" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -44,7 +45,8 @@
         android:gravity="center"
         android:hint="Tu password"
         android:inputType="textPassword"
-        android:textColorHint="@color/material_on_primary_emphasis_medium"
+        android:textColor="@color/black"
+        android:textColorHint="#29A6A5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -54,39 +56,44 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Validar"
         android:textColor="#D5D5D5"
-        app:backgroundTint="#534995"
+        app:backgroundTint="#29A6A5"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintVertical_bias="0.279" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Cancelar"
         android:textColor="#D5D5D5"
-        app:backgroundTint="#534995"
+        app:backgroundTint="#3A6EA6"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintVertical_bias="0.279" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="265dp"
-        android:layout_height="235dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="303dp"
+        android:layout_height="301dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
